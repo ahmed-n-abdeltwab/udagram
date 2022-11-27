@@ -24,13 +24,11 @@ jobs:
             echo "NPM --version" 
             echo $(npm --version)
             npm run frontend:install
-            npm audit fix
       # TODO: Install dependencies in the the backend API          
       - run:
           name: Install API Dependencies
           command: |
            npm run api:install
-           npm audit fix
       # TODO: Build the frontend app
       - run:
           name: Front-End Build
