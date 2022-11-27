@@ -15,7 +15,7 @@
 
 > Utilizing an AWS S3 Bucket, the frontend application is deployed. The combined assets are placed in an S3 bucket, which is then made publicly accessible.
 
-- S3 Endpoint - Frontend: `<link>`
+- S3 Endpoint - Frontend: [Link](http://udagram-bucket-1.s3-website-us-east-1.amazonaws.com)
 
 *The application is accessible to end users via the Bucket URL.*
 
@@ -39,13 +39,16 @@ Set up the following variables in the cloud environments or in the `.env` file:
 
 ```
 PORT=8080
-POSTGRES_USERNAME=<Database_Username>
-POSTGRES_PASSWORD=<Database_Password>
-POSTGRES_HOST=<Database_IP_Address>
-POSTGRES_DB=<Database_Name>
-URL=<Url>
-JWT_SECRET=<Any_PassPhrase>
-AWS_REGION=<us-east-1>
-AWS_PROFILE=<Profile>
-AWS_BUCKET=<Bucket_Name>
+POSTGRES_USERNAME=postgres
+POSTGRES_PASSWORD=postgres
+POSTGRES_HOST=udagram-database.cnxaftsckjds.us-east-1.rds.amazonaws.com
+POSTGRES_DB=postgres
+URL=http://udagram-bucket-1.s3-website-us-east-1.amazonaws.com/
+JWT_SECRET=99BEA46B6E62535F1B1F6AE23EBB1
+AWS_BUCKET=udagram-bucket-1
+AWS_ACCESS_KEY_ID=AKIASUS453PHPHRRZFTS
+AWS_SECRET_ACCESS_KEY=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
+AWS_DEFAULT_REGION=us-east-1
+EB_APP=udagram-EB-1
+EB_ENV=Udagrameb1-env
 ```
