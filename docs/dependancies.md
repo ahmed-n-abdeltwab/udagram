@@ -1,6 +1,6 @@
 ## App Dependencies
 ---
-### Dependencies
+### Content:
 1. [App](#app)
 2. [Frontend](#frontend)
 3. [Backend](#backend)
