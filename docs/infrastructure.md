@@ -39,11 +39,11 @@ Set up the following variables in the cloud environments or in the `.env` file:
 
 ```
 PORT=8080
+POSTGRES_USERNAME=<Database_Username>
+POSTGRES_PASSWORD=<Database_Password>
 POSTGRES_HOST=<Database_IP_Address>
 POSTGRES_PORT=<Database_Port>
 POSTGRES_DB=<Database_Name>
-POSTGRES_USERNAME=<Database_Username>
-POSTGRES_PASSWORD=<Database_Password>
 URL=<Url>
 JWT_SECRET=<Any_PassPhrase>
 AWS_REGION=<us-east-1>
