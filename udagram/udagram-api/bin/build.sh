@@ -8,8 +8,7 @@ tsc
 cp -rf src/config www/config 
 cp -R .elasticbeanstalk www/.elasticbeanstalk
 cp .npmrc www/.npmrc 
-cp package.json www/package.json 
-cp Procfile www/Procfile
+cp package.json www/package.json
 
 # zip the deploy codes
 cd www 
