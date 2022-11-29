@@ -1,0 +1,20 @@
+branch-defaults:
+  default:
+    environment: ${EB_ENV}
+    group_suffix: null
+  deploy:
+    artifact: Archive.zip
+global:
+  application_name: ${EB_APP}
+  branch: null
+  default_ec2_keyname: null
+  default_platform: Node.js 14 running on 64bit Amazon Linux 2
+  default_region: ${AWS_DEFAULT_REGION}
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: cli
+  repository: null
+  sc: null
+  workspace_type: Application

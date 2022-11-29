@@ -1,6 +1,6 @@
 cd www
 printenv > .env
-eb init $EB_APP -p node.js -r $AWS_DEFAULT_REGION
+eb init $EB_APP -r $AWS_DEFAULT_REGION -p "Node.js 14 running on 64bit Amazon Linux 2"
 eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME
 eb setenv POSTGRES_PASSWORD=$POSTGRES_PASSWORD
 eb setenv POSTGRES_HOST=$POSTGRES_HOST
